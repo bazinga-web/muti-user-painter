@@ -5,7 +5,8 @@ var path = require('path');
 var fs = require('fs');
 
 var server = http.createServer(handleRequest);
-server.listen(8080);
+var port = process.env.PORT || 8080;
+server.listen(port);
 
 console.log('Server start on port 8080!');
 
