@@ -14,7 +14,7 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
     pg = createGraphics(windowWidth, windowHeight);
     pg.background(255);
-    socket = io.connect('http://localhost:8080');
+    socket = io.connect('https://agile-beyond-76175.herokuapp.com/');
     socket.on('drawing', data => {
         console.log('Got: ' + data.x0 + ' ' + data.y0 + ',' + data.x1 + ' ' + data.y1)
 

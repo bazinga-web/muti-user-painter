@@ -8,7 +8,7 @@ var server = http.createServer(handleRequest);
 var port = process.env.PORT || 8080;
 server.listen(port);
 
-console.log('Server start on port 8080!');
+console.log(`Server start on port ${port}`);
 
 function handleRequest(req, res) {
     var pathname = req.url;
